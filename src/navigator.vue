@@ -1,8 +1,9 @@
 <template>
   <div class="header-box">
-    <div class="left">企业logo</div>
+    <div class="left f20">航天吉光</div>
     <div class="center">
-      <template v-for="(item, index) in routeList">
+      <div class="route-list">
+        <template v-for="(item, index) in routeList">
         <router-link
           :key="item.path"
           :class="{'link': true, active: activeIndex==index}"
@@ -11,6 +12,7 @@
           <span>{{item.label}}</span>
         </router-link>
       </template>
+      </div>
     </div>
     <div class="right">暂无</div>
   </div>
@@ -54,11 +56,18 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
   .header-box {
-    background-color: #ccc;
+    box-sizing: border-box;
+    height: 70px;
+    color: #fff;
+    background-color: #004CA0;
     display: flex;
     align-items: center;
     .center {
       flex: 1;
+    }
+    .route-list {
+      width: 60%;
+      margin: 0 auto;
       display: flex;
       align-items: center;
     }
@@ -69,7 +78,7 @@ export default {
     }
     .active {
       span {
-        border-bottom: 2px solid red;
+        border-bottom: 2px solid #00FFFF;
       }
     }
     .link {
