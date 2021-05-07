@@ -72,8 +72,5 @@ export default {
 </script>
 
 <style scoped lang="less">
-  .fullpage-container {
-    height: calc(100vh - 70px);
-  }
-  
+  @import './styles/index.less';
 </style>
