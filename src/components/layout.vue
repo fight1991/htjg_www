@@ -69,27 +69,27 @@
       <div class="features-box banxin text-img-box flex-row">
         <div class="features-tab flex-row align-center">
           <ul class="features-tab-left">
-            <li class="current-show" data-index="0">
+            <li @mouseover="tabOver(0)" class="current-show">
               城市智慧停车
             </li>
-            <li data-index="1">
+            <li @mouseover="tabOver(1)">
               电子车牌应用
             </li>
-            <li data-index="2">
+            <li @mouseover="tabOver(2)">
               北斗卫星物联网应用
             </li>
-            <li data-index="3">
+            <li @mouseover="tabOver(3)">
               区域信控优化
             </li>
-            <li data-index="4">
+            <li @mouseover="tabOver(4)">
               交通事件检测
             </li>
-            <li data-index="5">
+            <li @mouseover="tabOver(5)">
               交通态势研判
             </li>
           </ul>
           <div class="features-tab-right">
-            <div class="features-tab-right-item show flex-column jc-between">
+            <div v-show="currentIndex==0" class="features-tab-right-item flex-column jc-between">
               <div class="tab-title">依托云计算、物联网、大数据、人工智能等技术，提供智慧停车整体解决方案，具备车位实时数据采集、状态监控、车位查找、停车绑定、在线支付及执法监管等强大功能，解决城市的停车难、停车贵、停车乱等难题，大幅提高停车资源利用率。</div>
               <div class="tab-img">
                 <div class="tab-img-item">
@@ -110,7 +110,7 @@
                 </div>
               </div>
             </div>
-            <div class="features-tab-right-item flex-column jc-between">
+            <div v-show="currentIndex==1" class="features-tab-right-item flex-column jc-between">
               <div class="tab-title">采用射频识别技术和公安部制定推广的智能汽车电子标识，实现自动、非接触、不停车地对车辆进行识别和管理，让车主通过移动端App即可享受到高品质的人车生活服务，实现政府涉车管理及车金融等相关应用，让车与车、车与商户、车与人之间的关系变得更加紧密。</div>
               <div class="tab-img">
                 <div class="tab-img-item">
@@ -131,7 +131,7 @@
                 </div>
               </div>
             </div>
-            <div class="features-tab-right-item flex-column jc-between">
+            <div v-show="currentIndex==2" class="features-tab-right-item flex-column jc-between">
               <div class="tab-title">依托国家PNT体系建设战略方向，以北斗系统为核心基础，采用星、地融合方式对北斗导航定位信号进行增强，对北斗的短报文服务能力进行增强，构建天地一体、覆盖无缝、安全可信、高效便捷的国家综合PNT（定位、导航和授时）体系，为物联网应用提供广覆盖、大容量、高精度、低成本、低功耗的位置、时间和通讯（PNTC）服务。</div>
               <div class="tab-img">
                 <div class="tab-img-item">
@@ -152,7 +152,7 @@
                 </div>
               </div>
             </div>
-            <div class="features-tab-right-item flex-column jc-between">
+            <div v-show="currentIndex==3" class="features-tab-right-item flex-column jc-between">
               <div class="tab-title">航天吉光采用AI图引擎技术、路口自适应训练算法、干线协调算法等，结合城市交通历史通行规律，实时感知机动车、非机动车、行人的交通情况，实现点-线-面信号配时优化，提升交通效率，保障通行。</div>
               <div class="tab-img">
                 <div class="tab-img-item">
@@ -173,7 +173,7 @@
                 </div>
               </div>
             </div>
-            <div class="features-tab-right-item flex-column jc-between">
+            <div v-show="currentIndex==4" class="features-tab-right-item flex-column jc-between">
               <div class="tab-title">基于人工智能的交通事件检测，可对诊断出的交通异常事件，触发信号灯AI自动优化以疏导交通，并实时告警，此外，基于视频实时检测交通异常事件，秒级上报告警，更快解决突发拥堵。</div>
               <div class="tab-img">
                 <div class="tab-img-item">
@@ -186,7 +186,7 @@
                 </div>
               </div>
             </div>
-            <div class="features-tab-right-item flex-column jc-between">
+            <div v-show="currentIndex==5" class="features-tab-right-item flex-column jc-between">
               <div class="tab-title">基于深度学习与反馈的迭代更新，对交通网络进行实时智能化运算与模拟，识别常发拥堵路口、路段和干线，并基于历史交通规律，结合天气情况、假日情况等对未来交通态势进行精确预判，支撑出行信息诱导发布。</div>
               <div class="tab-img">
                 <div class="tab-img-item">
@@ -206,13 +206,12 @@
           </div>
         </div>
         <div class="features-img">
-          <img src="../assets/images/layout/bg3_1.png" class="features-img-item show" alt="">
-          <img src="../assets/images/layout/bg3_2.jpg" class="features-img-item" alt="">
-          <img src="../assets/images/layout/bg3_3.jpg" class="features-img-item" alt="">
-          <img src="../assets/images/layout/bg3_4.jpg" class="features-img-item" alt="">
-          <img src="../assets/images/layout/bg3_5.jpg" class="features-img-item" alt="">
-          <img src="../assets/images/layout/bg3_6.jpg" class="features-img-item" alt="">
-
+          <img v-show="currentIndex==0" src="../assets/images/layout/bg3_1.png" class="features-img-item" alt="">
+          <img v-show="currentIndex==1" src="../assets/images/layout/bg3_2.jpg" class="features-img-item" alt="">
+          <img v-show="currentIndex==2" src="../assets/images/layout/bg3_3.jpg" class="features-img-item" alt="">
+          <img v-show="currentIndex==3" src="../assets/images/layout/bg3_4.jpg" class="features-img-item" alt="">
+          <img v-show="currentIndex==4" src="../assets/images/layout/bg3_5.jpg" class="features-img-item" alt="">
+          <img v-show="currentIndex==5" src="../assets/images/layout/bg3_6.jpg" class="features-img-item" alt="">
         </div>
       </div>
     </div>
@@ -252,7 +251,7 @@
             在支付方面，航天吉光搭建基于机动车电子标识为载体的账户体系，建立围绕车主用车场景的聚合支付服务体系，连通资金端与消费服务端，实现统一记账结算，通过用户画像、驾驶行为等构成的用户评价体系，综合维度评判信用等级，按不同等级给予车主一定金额的授信额度，实现免征信、免刷卡、免现金、免扫码、免下车的金融服务体验，完成用户在多场景的涉车服务消费，创新性地打造“互联网+品牌+产品+服务”的商业新模式，为客户构建智慧型、高价值的人车生活生态圈。
           </div>
         </div>
-        <div class="pos-img car-img" style="background-image: url(../assets/images/layout/bg5.png);">
+        <div class="pos-img car-img" :style="{'backgroundImage': 'url(' + bg5 + ')'}">
           <!-- <img src="../assets/images/layout/bg5.png" alt=""> -->
         </div>
       </div>
@@ -262,7 +261,18 @@
 
 <script>
 export default {
-
+  data () {
+    return {
+      bg5: require('@/assets/images/layout/bg5.png'),
+      currentIndex: 0
+    }
+  },
+  methods: {
+    tabOver (index) {
+      console.log(index)
+      this.currentIndex = index
+    }
+  }
 }
 </script>
 
