@@ -3,6 +3,7 @@ const path = require('path')
 // const templateFunc = require(path.join(__dirname, './spriteTemplate')) // 雪碧图文件模板
 const CompressionPlugin = require('compression-webpack-plugin') // Gzip压缩
 // const FileManagerPlugin = require('filemanager-webpack-plugin') // 将build后的文件压缩
+const webpack = require('webpack')
 const webpackConfig = {
   publicPath: '/', // 应用部署路径
   outputDir: 'dist', // 生产环境构建目录
@@ -56,6 +57,10 @@ const webpackConfig = {
   },
   configureWebpack: { // 配置webpack
     plugins: [
+      new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery'
+      })
       // new SpritesmithPlugin({
       //   src: {
       //     cwd: './src/assets/plantIcon',

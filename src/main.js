@@ -3,8 +3,12 @@ import App from './App.vue'
 import router from './router'
 
 // fullpage插件
-import 'vue-fullpage/vue-fullpage.css'
-import VueFullpage from 'vue-fullpage'
+// import 'vue-fullpage/vue-fullpage.css'
+// import VueFullpage from 'vue-fullpage'
+
+import 'fullpage.js/vendors/scrolloverflow';
+import VueFullpage from 'vue-fullpage.js'
+Vue.use(VueFullpage)
 
 // animate动画样式
 import 'animate.css'

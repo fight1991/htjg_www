@@ -11,6 +11,7 @@
   "dependencies": {
     "animate.css": "^4.1.1",
     "core-js": "^3.6.5",
+    "jQuery": "^1.7.2",
     "vue": "^2.6.11",
     "vue-fullpage": "^2.0.5",
     "vue-fullpage.js": "^0.1.7",

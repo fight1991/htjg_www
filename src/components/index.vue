@@ -1,20 +1,18 @@
 <template>
 <!--  :style="'height:' + boxHeight + 'px;'" -->
 <div class="fullpage-container">
-  <div class="fullpage-wp" v-fullpage="opts">
-    <div class="page-1 page">
-      <p class="part-1" v-animate="{value: 'bounceInLeft'}">vue-fullpage</p>
-    </div>
-    <div class="page-2 page">
-      <p class="part-2" v-animate="{value: 'bounceInRight'}">vue-fullpage</p>
-    </div>
-    <div class="page-3 page">
-      <p class="part-3" v-animate="{value: 'bounceInLeft', delay: 0}">vue-fullpage</p>
-      <p class="part-3" v-animate="{value: 'bounceInRight', delay: 600}">vue-fullpage</p>
-      <p class="part-3" v-animate="{value: 'zoomInDown', delay: 1200}">vue-fullpage</p>
-    </div>
+  <full-page :options="options" ref="fullpage">
+      <div class="section">
+        <h3>vue-fullpage.js</h3>
+      </div>
+      <div class="section">
+        
+      </div>
+      <div class="section">
+        <h3>Section 3</h3>
+      </div>
+    </full-page>
   </div>
-</div>
 </template>
 
 <script>
@@ -24,10 +22,22 @@ export default {
       homeImg: {
         one: require('../assets/home-page1.jpg')
       },
-       opts: {
-        start: 0,
-        dir: 'v',
-        duration: 500
+       options: {
+        licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
+        //是否显示导航，默认为false
+        navigation: true,
+        //为每个section设置背景色
+        sectionsColor: [
+          "#41b883",
+          "#ff5f45",
+          "#0798ec",
+          "#fec401",
+          "#1bcee6",
+          "#ee1a59",
+          "#2c3e4f",
+          "#ba5be9",
+          "#b4b8ab"
+        ],
       }
     }
   },
@@ -41,7 +51,5 @@ export default {
   .fullpage-container {
     height: 100vh;
   }
-  .part-1 {
-    background-color: #f5f5f5;
-  }
+
 </style>
