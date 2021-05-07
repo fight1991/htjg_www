@@ -10,6 +10,7 @@
     </div>
     <!-- 底部区域 -->
     <div>
+      <!-- h5有footer标签, 需要重新命名, 否则会报错 -->
       <nav-footer></nav-footer>
     </div>
   </div>
