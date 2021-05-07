@@ -27,10 +27,10 @@
       </div>
       <div class="right">
         <div class="logo">
-          <img src="./assets/images/logo.png" alt="">
+          <img src="../assets/images/logo.png" alt="">
         </div>
         <div class="qrcode">
-          <img src="./assets/images/erweima.png" alt="">
+          <img src="../assets/images/erweima.png" alt="">
         </div>
       </div>
     </div>

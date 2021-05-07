@@ -1,7 +1,7 @@
 <template>
   <div class="header-box">
     <div class="left f30">
-      <img src="./assets/images/logo.png" alt="">
+      <img src="../assets/images/logo.png" alt="">
     </div>
     <div class="center">
       <div class="route-list f24">
@@ -78,7 +78,6 @@ export default {
   },
   methods: {
     setCurrentIndex (index) {
-      console.log(index)
       this.activeIndex = index
     }
   }
