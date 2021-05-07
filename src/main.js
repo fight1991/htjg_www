@@ -3,9 +3,8 @@ import App from './App.vue'
 import router from './router'
 
 // fullpage插件
-import 'fullpage.js/vendors/scrolloverflow'
-import VueFullPage from 'vue-fullpage.js'
-import 'fullpage.js/dist/fullpage.min.css'
+import 'vue-fullpage/vue-fullpage.css'
+import VueFullpage from 'vue-fullpage'
 
 // animate动画样式
 import 'animate.css'
@@ -16,7 +15,7 @@ import VueLazyload from 'vue-lazyload'
 // 初始化样式文件
 import './style/base.less'
 
-Vue.use(VueFullPage)
+Vue.use(VueFullpage)
 Vue.use(VueLazyload)  
 
 Vue.config.productionTip = false
