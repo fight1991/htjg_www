@@ -1,14 +1,229 @@
 <template>
 <!--  :style="'height:' + boxHeight + 'px;'" -->
-  <div class="fullpage-container">
-    <div class="box">
-      <div class="section">1</div>
-      <div class="section">2</div>
-      <div class="section">3</div>
-      <div class="section">4</div>
-      <div class="section">4</div>
-      <div class="section">4</div>
-
+  <div class="outer">
+    <div class="fullpage-container">
+      <div class="box">
+        <div class="section one">
+          <div class="title f30"></div>
+          <div class="bg"></div>
+        </div>
+        <div class="section two">
+          <div class="title"><img src="../assets/images/second_sreen/title.png" alt=""></div>
+          <div class="content banxin">
+            <div class="left-text">
+              <div class="main-title f20 fw">
+                <div class="main-title-1">航天科技集团军民融合战略</div>
+                <div class="main-title-2">在智慧交通领域的示范性落地与标杆性探索</div>
+              </div>
+              <div class="sub-title f12 text-justify">航天吉光科技有限公司隶属于中国航天科技集团, 由深圳航天科技创新研究院控股成立, 是践行国家央地合作、军民融合战略的典范企业。航天吉光科技聚焦智慧交通领域, 充分发挥集团优势、资本优势、创新优势、数据优势, 依靠自身大数据、人工智能、云边融合等硬实力, 为客户提供"科技+产业+生态"的全方位智慧交通服务。航天吉光致力于成为智慧交通新生态的引领者,打造具备"亿车互联"数据集成、分析与应用能力的独角兽平台, 开拓出行新未来。</div>
+              <div class="know-more-btn">
+                <a href="./aboutUs.html#top">了解更多</a>
+              </div>
+            </div>
+            <div class="map-img"></div>
+          </div>
+        </div>
+        <div class="section three">
+          <div class="bg">
+            <div class="title f30"><img src="../assets/images/third_screen/title.png" alt=""></div>
+          </div>
+          <div class="foot banxin">
+            <div class="item">
+              <div class="icon"><img src="../assets/images/third_screen/icon1.png" alt=""></div>
+              <span class="item-text f20 fw">
+                城市级交通管理平台
+              </span>
+              <span class="know-more-btn">
+                <a class="a-label" href="./layout.html#manage">了解更多</a>
+              </span>
+            </div>
+            <div class="item">
+              <div class="icon"><img src="../assets/images/third_screen/icon2.png" alt=""></div>
+              <span class="item-text f20 fw">
+                人车生活开放服务平台
+              </span>
+              <span class="know-more-btn">
+                <a href="./layout.html#server">了解更多</a>
+              </span>
+            </div> 
+          </div>
+        </div>
+        <div class="section four four-five jc-center">
+          <div class="title f30"><img src="../assets/images/four_sreen/title.png" alt=""></div>
+          <div class="content banxin flex-row jc-between align-center">
+            <div class="content-text">
+              <div class="content-text-top text-justify">
+                依托云计算、物联网、大数据、人工智能等技术，提供智慧停车整体解决方案，具备车位实时数据采集、状态监控、车位查找、停车绑定、在线支付及执法监管等强大功能，解决城市的停车难、停车贵、停车乱等难题，大幅提高停车资源利用率。
+              </div>
+              <div class="content-text-img">
+                <div class="content-text-img-item">
+                  <img src="../assets/images/four_sreen/icon1.png" alt="">
+                  <div class="img-item-text">车位查找智能化</div>
+                </div>
+                <div class="content-text-img-item">
+                  <img src="../assets/images/four_sreen/icon2.png" alt="">
+                  <div class="img-item-text">泊车管理可视化</div>
+                </div>
+                <div class="content-text-img-item">
+                  <img src="../assets/images/four_sreen/icon3.png" alt="">
+                  <div class="img-item-text">收费方式无人化</div>
+                </div>
+                <div class="content-text-img-item">
+                  <img src="../assets/images/four_sreen/icon4.png" alt="">
+                  <div class="img-item-text">欠费追缴法制化</div>
+                </div>
+              </div>
+              <div class="content-text-bottom flex-row jc-between">
+                <div class="content-text-bottom-item text-justify">
+                  提供一体化的、多硬件集合的、支持多种收费模式的路侧停车解决方案;
+                </div>
+                <div class="shuxian"></div>
+                <div class="content-text-bottom-item text-justify">
+                  提供去岗亭化、可车位导航、可反向寻车的路外无人或少人的停车库（场）解决方案;
+                </div>
+                <div class="shuxian"></div>
+                <div class="content-text-bottom-item text-justify">
+                  结合综合诱导服务系统、停车收费管理系统、数据分析决策系统的城市级交通管理平台;
+                </div>
+              </div>
+            </div>
+            <div class="content-img">
+              <img src="../assets/images/four_sreen/eg.png" alt="">
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="know-more-btn">
+              <a href="./business.html#ways_stop">了解更多</a>
+            </div>
+          </div>
+        </div>
+        <div class="section five four-five jc-center">
+          <div class="title f30"><img src="../assets/images/five_screen/title.png" alt=""></div>
+          <div class="content banxin flex-row jc-between align-center">
+            <div class="content-text">
+              <div class="content-text-top text-justify">
+                航天吉光采用射频识别技术，利用存储汽车身份数据的电子信息识别载体与读写设备间的相互作用，实现自动、非接触、不停车地对车辆进行识别和监控，实现对涉车服务、政府涉车管理及车金融等全产业链应用。
+              </div>
+              <div class="content-text-img">
+                <div class="content-text-img-item">
+                  <img src="../assets/images/five_screen/icon1.png" alt="">
+                  <div class="img-item-text">停车管理</div>
+                </div>
+                <div class="content-text-img-item">
+                  <img src="../assets/images/five_screen/icon2.png" alt="">
+                  <div class="img-item-text">智慧加油</div>
+                </div>
+                <div class="content-text-img-item">
+                  <img src="../assets/images/five_screen/icon3.png" alt="">
+                  <div class="img-item-text">自动洗车</div>
+                </div>
+                <div class="content-text-img-item">
+                  <img src="../assets/images/five_screen/icon4.png" alt="">
+                  <div class="img-item-text">公安交警</div>
+                </div>
+                <div class="content-text-img-item">
+                  <img src="../assets/images/five_screen/icon5.png" alt="">
+                  <div class="img-item-text">道路规则</div>
+                </div>
+                <div class="content-text-img-item">
+                  <img src="../assets/images/five_screen/icon6.png" alt="">
+                  <div class="img-item-text">特种车辆</div>
+                </div>
+                <div class="content-text-img-item">
+                  <img src="../assets/images/five_screen/icon7.png" alt="">
+                  <div class="img-item-text">公共交通</div>
+                </div>
+                <div class="content-text-img-item">
+                  <img src="../assets/images/five_screen/icon8.png" alt="">
+                  <div class="img-item-text">一带一路</div>
+                </div>
+              </div>
+              <div class="content-text-bottom text-justify">
+                汽车电子标识（简称ERI）是由国家公安部制定并予以推广，用于全国车辆真实身份识别的一套高科技系统的统称。是由公安部交通管理局统一标准，统一推行，统一管理，与汽车车辆号牌并存，并且法律效力等同于车辆号牌。
+              </div>
+            </div>
+            <div class="content-img">
+              <img src="../assets/images/five_screen/eg.png" alt="">
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="know-more-btn">
+              <a href="./bus_vehicel.html#top">了解更多</a>
+            </div>
+          </div>
+        </div>
+        <div class="section six flex-column align-center jc-center">
+          <div class="title f30"><img src="../assets/images/six_screen/title.png" alt=""></div>
+          <div class="news-banner banxin">
+            <!-- <div class="slide">
+              <div class="slide-detail"></div>
+            </div>
+            <div class="slide">第三屏的第二屏</div>
+            <div class="slide">第三屏的第三屏</div>
+            <div class="slide">第三屏的第四屏</div> -->
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="./news.html#news01">
+                    <div class="swiper-slide-item">
+                      <div class="swiper-slide-item-img">
+                        <img src="../assets/images/news/news01.png" alt="">
+                      </div>
+                      <div class="swiper-slide-item-content-title text-cut">《道路交通安全法（修订建议稿）》公开征求意见，机动车需按规定安装电子标识</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="./news.html#news02">
+                    <div class="swiper-slide-item">
+                      <div class="swiper-slide-item-img">
+                        <img src="../assets/images/news/news02.png" alt="">
+                      </div>
+                      <div class="swiper-slide-item-content-title text-cut">航天吉光“智慧堰桥”停车一体化项目正式启动</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="./news.html#news03">
+                    <div class="swiper-slide-item">
+                      <div class="swiper-slide-item-img">
+                        <img src="../assets/images/news/news03.png" alt="">
+                      </div>
+                      <div class="swiper-slide-item-content-title text-cut">三个首创！航天吉光非机动车管控试点在江阴落地，赋能城市交通治理</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="./news.html#news04">
+                    <div class="swiper-slide-item">
+                      <div class="swiper-slide-item-img">
+                        <img src="../assets/images/news/news04.png" alt="">
+                      </div>
+                      <div class="swiper-slide-item-content-title text-cut">步步为营！智慧交通赛道上最新政策与行业动态（2月份）</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="./news.html#news05">
+                    <div class="swiper-slide-item">
+                      <div class="swiper-slide-item-img">
+                        <img src="../assets/images/news/news05.png" alt="">
+                      </div>
+                      <div class="swiper-slide-item-content-title text-cut">“十四五”开局之年，航天吉光乘风而生，破浪前行</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- 箭头。如果放置在swiper-container外面，需要自定义样式。 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="know-more-btn swiper-box-btn">
+            <a href="./news.html">了解更多</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
