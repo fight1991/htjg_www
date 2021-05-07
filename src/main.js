@@ -18,6 +18,7 @@ import VueLazyload from 'vue-lazyload'
 
 // 初始化样式文件
 import './style/base.less'
+import './style/main.less'
 
 Vue.use(VueFullpage)
 Vue.use(VueLazyload)  

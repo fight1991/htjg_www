@@ -6,12 +6,25 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/fullpage.js/dist/fullpage.min.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/fullPage.js/2.7.5/jquery.fullPage.min.js"></script>
+    <link href="https://cdn.bootcdn.net/ajax/libs/fullPage.js/2.7.5/jquery.fullPage.css" rel="stylesheet">
+
   </head>
   <body>
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
+    <script>
+      computerRootSize();
+      window.addEventListener('resize', () => {
+        computerRootSize()
+      });
+      function computerRootSize () {
+        var clientWidth = window.innerWidth
+        document.documentElement.style.fontSize = (clientWidth / 1920) * 100 + 'px'
+      }
+    </script>
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
