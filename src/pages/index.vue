@@ -1,6 +1,10 @@
 <template>
 <!--  :style="'height:' + boxHeight + 'px;'" -->
   <div class="outer">
+    <!-- 头部导航区域 -->
+    <div class="header-navigator">
+      <navigator></navigator>
+    </div>
     <div class="fullpage-container">
       <div class="box">
         <div class="section one">
@@ -11,9 +15,9 @@
           <div class="title"><img src="../assets/images/second_sreen/title.png" alt=""></div>
           <div class="content banxin">
             <div class="left-text">
-              <div class="main-title f20 fw">
-                <div class="main-title-1">航天科技集团军民融合战略</div>
-                <div class="main-title-2">在智慧交通领域的示范性落地与标杆性探索</div>
+              <div class="main-title">
+                <p class="main-title-1">航天科技集团军民融合战略</p>
+                <p class="main-title-2">在智慧交通领域的示范性落地与标杆性探索</p>
               </div>
               <div class="sub-title f12 text-justify">航天吉光科技有限公司隶属于中国航天科技集团, 由深圳航天科技创新研究院控股成立, 是践行国家央地合作、军民融合战略的典范企业。航天吉光科技聚焦智慧交通领域, 充分发挥集团优势、资本优势、创新优势、数据优势, 依靠自身大数据、人工智能、云边融合等硬实力, 为客户提供"科技+产业+生态"的全方位智慧交通服务。航天吉光致力于成为智慧交通新生态的引领者,打造具备"亿车互联"数据集成、分析与应用能力的独角兽平台, 开拓出行新未来。</div>
               <div class="know-more-btn">
@@ -163,61 +167,25 @@
             <div class="slide">第三屏的第四屏</div> -->
             <div class="swiper-container">
               <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <a href="./news.html#news01">
+                <div v-for="item in swiperList" :key="item.id" class="swiper-slide">
+                  <a :href="item.href">
                     <div class="swiper-slide-item">
                       <div class="swiper-slide-item-img">
-                        <img src="../assets/images/news/news01.png" alt="">
+                        <img :src="item.img" alt="">
                       </div>
-                      <div class="swiper-slide-item-content-title text-cut">《道路交通安全法（修订建议稿）》公开征求意见，机动车需按规定安装电子标识</div>
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="./news.html#news02">
-                    <div class="swiper-slide-item">
-                      <div class="swiper-slide-item-img">
-                        <img src="../assets/images/news/news02.png" alt="">
-                      </div>
-                      <div class="swiper-slide-item-content-title text-cut">航天吉光“智慧堰桥”停车一体化项目正式启动</div>
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="./news.html#news03">
-                    <div class="swiper-slide-item">
-                      <div class="swiper-slide-item-img">
-                        <img src="../assets/images/news/news03.png" alt="">
-                      </div>
-                      <div class="swiper-slide-item-content-title text-cut">三个首创！航天吉光非机动车管控试点在江阴落地，赋能城市交通治理</div>
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="./news.html#news04">
-                    <div class="swiper-slide-item">
-                      <div class="swiper-slide-item-img">
-                        <img src="../assets/images/news/news04.png" alt="">
-                      </div>
-                      <div class="swiper-slide-item-content-title text-cut">步步为营！智慧交通赛道上最新政策与行业动态（2月份）</div>
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="./news.html#news05">
-                    <div class="swiper-slide-item">
-                      <div class="swiper-slide-item-img">
-                        <img src="../assets/images/news/news05.png" alt="">
-                      </div>
-                      <div class="swiper-slide-item-content-title text-cut">“十四五”开局之年，航天吉光乘风而生，破浪前行</div>
+                      <div class="swiper-slide-item-content-title text-cut">{{item.title}}</div>
                     </div>
                   </a>
                 </div>
               </div>
             </div>
             <!-- 箭头。如果放置在swiper-container外面，需要自定义样式。 -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev" @click="preNew">
+              <i class="iconfont arrow-icon icon-arrow-left"></i>
+            </div>
+            <div class="swiper-button-next" @click="nextNew">
+              <i class="iconfont arrow-icon icon-arrow-right"></i>
+            </div>
           </div>
           <div class="know-more-btn swiper-box-btn">
             <a href="./news.html">了解更多</a>
@@ -229,14 +197,18 @@
 </template>
 
 <script>
+
 import $ from 'jquery'
+import navigator from '../components/navigator'
+
 export default {
+  components: { navigator },
   data () {
     return {
       homeImg: {
         one: require('../assets/home-page1.jpg')
       },
-       options: {
+      options: {
         licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
         //是否显示导航，默认为false
         navigation: true,
@@ -252,7 +224,35 @@ export default {
           "#ba5be9",
           "#b4b8ab"
         ],
-      }
+      },
+      swiperList: [
+        {
+          id: 'news01',
+          title: '《道路交通安全法（修订建议稿）》公开征求意见，机动车需按规定安装电子标识',
+          href: './news.html#news01',
+          img: require('@/assets/images/news/news01.png')
+        }, {
+          id: 'news02',
+          title: '航天吉光“智慧堰桥”停车一体化项目正式启动',
+          href: './news.html#news02',
+          img: require('@/assets/images/news/news02.png')
+        }, {
+          id: 'news03',
+          title: '三个首创！航天吉光非机动车管控试点在江阴落地，赋能城市交通治理',
+          href: './news.html#news03',
+          img: require('@/assets/images/news/news03.png')
+        }, {
+          id: 'news04',
+          title: '步步为营！智慧交通赛道上最新政策与行业动态（2月份）',
+          href: './news.html#news04',
+          img: require('@/assets/images/news/news04.png')
+        }, {
+          id: 'news05',
+          title: '“十四五”开局之年，航天吉光乘风而生，破浪前行',
+          href: './news.html#news05',
+          img: require('@/assets/images/news/news05.png')
+        }
+      ]
     }
   },
   mounted () {
@@ -260,6 +260,17 @@ export default {
   },
   methods: {
     afterLoad () {},
+    preNew () {
+      // let tempArr = JSON.parse(JSON.stringify(this.swiperList))
+      let firstData = this.swiperList[0]
+      this.swiperList.shift()
+      this.swiperList.push(firstData)
+    },
+    nextNew () {
+      let lastData = this.swiperList[this.swiperList.length - 1]
+      this.swiperList.pop()
+      this.swiperList.unshift(lastData)
+    },
     initFullpage () {
       $('.box').fullpage({
         // 配置每屏的颜色
@@ -288,4 +299,25 @@ export default {
 
 <style scoped lang="less">
   @import './styles/index.less';
+  .main-title {
+    font-size: 18px;
+  } 
+  .swiper-wrapper {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+  }
+  .swiper-slide {
+    width: 24%;
+    float: left;
+    &:last-child {
+      display: none;
+    }
+  }
+  .arrow-icon {
+    font-size: 36px;
+  }
+  p {
+    padding: 5px 0;
+  }
 </style>

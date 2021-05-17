@@ -6,48 +6,18 @@
         <img src="../assets/images/business/title1.png" alt="">
       </div>
       <div class="grid-content banxin">
-        <div class="grid-content-dot f24">
+        <div class="grid-content-dot">
           <div class="text1">全市/区</div>
           <div class="text1">一张网</div>
         </div>
-        <div class="grid-content-item flex-column align-center jc-center">
+        <div v-for="item in iconList" :key="item.id" class="grid-content-item flex-column align-center jc-center">
           <div class="grid-icon">
-            <img src="../assets/images/business/grid-icon1.png" alt="">
+            <img :src="item.icon" alt="">
           </div>
           <div class="grid-text">
-            <img src="../assets/images/business/grid-text1.png" alt="">
+            <img :src="item.textIcon" alt="">
           </div>
-          <div class="grid-content-item-bg" style="background-image:url('/images/business/solution1.png');">
-          </div>
-        </div>
-        <div class="grid-content-item flex-column align-center jc-center">
-          <div class="grid-icon">
-            <img src="../assets/images/business/grid-icon2.png" alt="">
-          </div>
-          <div class="grid-text">
-            <img src="../assets/images/business/grid-text2.png" alt="">
-          </div>
-          <div class="grid-content-item-bg" style="background-image:url('/images/business/solution2.png');">
-          </div>
-        </div>
-        <div class="grid-content-item flex-column align-center jc-center">
-          <div class="grid-icon">
-            <img src="../assets/images/business/grid-icon3.png" alt="">
-          </div>
-          <div class="grid-text">
-            <img src="../assets/images/business/grid-text3.png" alt="">
-          </div>
-          <div class="grid-content-item-bg" style="background-image:url('/images/business/solution3.png');">
-          </div>
-        </div>
-        <div class="grid-content-item flex-column align-center jc-center">
-          <div class="grid-icon">
-            <img src="../assets/images/business/grid-icon4.png" alt="">
-          </div>
-          <div class="grid-text">
-            <img src="../assets/images/business/grid-text4.png" alt="">
-          </div>
-          <div class="grid-content-item-bg" style="background-image:url('/images/business/solution4.png');">
+          <div class="grid-content-item-bg" :style="{'backgroundImage': 'url(' + item.bg + ')'}">
           </div>
         </div>
       </div>
@@ -204,11 +174,40 @@
 
 <script>
 export default {
-
+  data () {
+    return {
+      iconList: [
+        {
+          id: 'icon1',
+          icon: require('@/assets/images/business/grid-icon1.png'),
+          textIcon: require('@/assets/images/business/grid-text1.png'),
+          bg: require('../assets/images/business/solution1.png')
+        }, {
+          id: 'icon2',
+          icon: require('@/assets/images/business/grid-icon2.png'),
+          textIcon: require('@/assets/images/business/grid-text2.png'),
+          bg: require('@/assets/images/business/solution2.png')
+        }, {
+          id: 'icon3',
+          icon: require('@/assets/images/business/grid-icon3.png'),
+          textIcon: require('@/assets/images/business/grid-text3.png'),
+          bg: require('@/assets/images/business/solution3.png')
+        }, {
+          id: 'icon4',
+          icon: require('@/assets/images/business/grid-icon4.png'),
+          textIcon: require('@/assets/images/business/grid-text4.png'),
+          bg: require('@/assets/images/business/solution4.png')
+        }
+      ]
+    }
+  }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
   @import './styles/business.less';
+  .grid-content-dot {
+    font-size: 16px;
+  }
 </style>
