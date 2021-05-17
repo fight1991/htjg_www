@@ -52,13 +52,13 @@ export default {
           children: [
             {
               label: '人车生活服务平台解决方案',
-              path: 'bus_live'
+              path: '/bus_live'
             }, {
               label: '城市级智慧停车解决方案',
-              path: 'business'
+              path: '/business'
             }, {
               label: '城市级电动自行车管理解决方案',
-              path: 'bus_vehicel'
+              path: '/bus_vehicel'
             }
           ]
         }, {
@@ -80,6 +80,9 @@ export default {
     setCurrentIndex (index) {
       this.activeIndex = index
     }
+  },
+  created () {
+    console.log(this.$route.path)
   }
 }
 </script>
