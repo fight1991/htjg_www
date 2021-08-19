@@ -50,43 +50,16 @@
           <div class="title f30"><img src="../assets/images/four_sreen/title.png" alt=""></div>
           <div class="content banxin flex-row jc-between align-center">
             <div class="content-text">
+              <div class="content-text-title">城市级智慧交通管理平台</div>
               <div class="content-text-top text-justify">
-                依托云计算、物联网、大数据、人工智能等技术，提供智慧停车整体解决方案，具备车位实时数据采集、状态监控、车位查找、停车绑定、在线支付及执法监管等强大功能，解决城市的停车难、停车贵、停车乱等难题，大幅提高停车资源利用率。
+                航天吉光基于机动车电子标识技术打造星地一体的城市级智慧交通管理平台。以电动自行车智能监管及机动车智慧管理两大业务为抓手, 搭建"非机动车联网联控 + 汽车智能网联 + 交通运行管理平台 + 交通信息服务系统"的智慧交通信息化基础设施体系, 让智慧交通大脑高速运转, 实现对电动自行车管理、治安涉车管理、交通运输管理、城市交通管理、环保检测管理、市政停车管理等主要场景的应用, 有效降低交通事故发生率、违法率、提高道路及车辆利用率, 助理政府交通管理升级。
               </div>
               <div class="content-text-img">
-                <div class="content-text-img-item">
-                  <img src="../assets/images/four_sreen/icon1.png" alt="">
-                  <div class="img-item-text">车位查找智能化</div>
-                </div>
-                <div class="content-text-img-item">
-                  <img src="../assets/images/four_sreen/icon2.png" alt="">
-                  <div class="img-item-text">泊车管理可视化</div>
-                </div>
-                <div class="content-text-img-item">
-                  <img src="../assets/images/four_sreen/icon3.png" alt="">
-                  <div class="img-item-text">收费方式无人化</div>
-                </div>
-                <div class="content-text-img-item">
-                  <img src="../assets/images/four_sreen/icon4.png" alt="">
-                  <div class="img-item-text">欠费追缴法制化</div>
-                </div>
-              </div>
-              <div class="content-text-bottom flex-row jc-between">
-                <div class="content-text-bottom-item text-justify">
-                  提供一体化的、多硬件集合的、支持多种收费模式的路侧停车解决方案;
-                </div>
-                <div class="shuxian"></div>
-                <div class="content-text-bottom-item text-justify">
-                  提供去岗亭化、可车位导航、可反向寻车的路外无人或少人的停车库（场）解决方案;
-                </div>
-                <div class="shuxian"></div>
-                <div class="content-text-bottom-item text-justify">
-                  结合综合诱导服务系统、停车收费管理系统、数据分析决策系统的城市级交通管理平台;
-                </div>
+                <img src="../assets/images/four_sreen/homepage-caricon.png" alt="">
               </div>
             </div>
             <div class="content-img">
-              <img src="../assets/images/four_sreen/eg.png" alt="">
+              <img src="../assets/images/four_sreen/homepage-car.png" alt="">
             </div>
           </div>
           <div class="bottom">

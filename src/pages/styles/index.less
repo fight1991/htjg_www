@@ -246,44 +246,45 @@
 /* 第三屏结束 */
 /* 第四屏开始 */
 .four-five .title{
-  margin-top: .5rem;
+  margin-top: 10px;
   transform: translateY(-1rem) scale(.2);
 }
 .four-five.active .title {
   transform: none;
 }
 .four-five .title {
-  width: 6.37rem;
+  width: 200px;
   position: static;
 }
-.four-five .content {
-  flex: 1;
+.four-five .bottom {
+  padding-bottom: 20px;
 }
 .four-five .content-text {
-  width: 43%;
-  // // font-size: .12rem;
-  // line-height: .24rem;
+  flex: 1;
+  max-width: 500px;
+}
+.content-text-top {
+  margin: 20px 0;
+  line-height: 22px;
+  font-size: 14px;
+}
+.four-five .content-text-title {
+  font-size: 18px;
+  font-weight: bold;
 }
 .four-five .content-img {
-  width: 50%;
+  flex: 1;
 }
 .four-five .content-text-img {
-  /* width: 4.71rem; */
-  margin: .8rem 0rem .6rem;
-  display: flex;
+  // width: 450px;
+  width: 95%;
 }
 .four-five .content-text-img-item {
   width: .71rem;
   margin-right: .64rem;
   text-align: center;
 }
-.four-five .content-text-img-item .img-item-text {
-  margin-top: .18rem;
-}
-.four-five .content-text-img-item img {
-  margin: 0 auto;
-  width: 0.71rem;
-}
+
 .four-five .content-text-img-item.margin-none {
   margin-right: 0;
 }
@@ -299,9 +300,6 @@
   width: 30%;
   /* padding-right: .1rem; */
   /* border-right: 1px dotted #01FFFF; */
-}
-.four-five .bottom {
-  padding: .4rem 0;
 }
 .four-five .bottom .know-more-btn {
   margin: 0;
