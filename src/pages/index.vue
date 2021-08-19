@@ -69,57 +69,24 @@
           </div>
         </div>
         <div class="section five four-five jc-center">
-          <div class="title f30"><img src="../assets/images/five_screen/title.png" alt=""></div>
+          <div class="title f30"><img src="../assets/images/four_sreen/title.png" alt=""></div>
           <div class="content banxin flex-row jc-between align-center">
             <div class="content-text">
+              <div class="content-text-title">城市级智慧交通管理平台</div>
               <div class="content-text-top text-justify">
-                航天吉光采用射频识别技术，利用存储汽车身份数据的电子信息识别载体与读写设备间的相互作用，实现自动、非接触、不停车地对车辆进行识别和监控，实现对涉车服务、政府涉车管理及车金融等全产业链应用。
+                航天吉光基于机动车电子标识技术打造星地一体的城市级智慧交通管理平台。以电动自行车智能监管及机动车智慧管理两大业务为抓手, 搭建"非机动车联网联控 + 汽车智能网联 + 交通运行管理平台 + 交通信息服务系统"的智慧交通信息化基础设施体系, 让智慧交通大脑高速运转, 实现对电动自行车管理、治安涉车管理、交通运输管理、城市交通管理、环保检测管理、市政停车管理等主要场景的应用, 有效降低交通事故发生率、违法率、提高道路及车辆利用率, 助理政府交通管理升级。
               </div>
               <div class="content-text-img">
-                <div class="content-text-img-item">
-                  <img src="../assets/images/five_screen/icon1.png" alt="">
-                  <div class="img-item-text">停车管理</div>
-                </div>
-                <div class="content-text-img-item">
-                  <img src="../assets/images/five_screen/icon2.png" alt="">
-                  <div class="img-item-text">智慧加油</div>
-                </div>
-                <div class="content-text-img-item">
-                  <img src="../assets/images/five_screen/icon3.png" alt="">
-                  <div class="img-item-text">自动洗车</div>
-                </div>
-                <div class="content-text-img-item">
-                  <img src="../assets/images/five_screen/icon4.png" alt="">
-                  <div class="img-item-text">公安交警</div>
-                </div>
-                <div class="content-text-img-item">
-                  <img src="../assets/images/five_screen/icon5.png" alt="">
-                  <div class="img-item-text">道路规则</div>
-                </div>
-                <div class="content-text-img-item">
-                  <img src="../assets/images/five_screen/icon6.png" alt="">
-                  <div class="img-item-text">特种车辆</div>
-                </div>
-                <div class="content-text-img-item">
-                  <img src="../assets/images/five_screen/icon7.png" alt="">
-                  <div class="img-item-text">公共交通</div>
-                </div>
-                <div class="content-text-img-item">
-                  <img src="../assets/images/five_screen/icon8.png" alt="">
-                  <div class="img-item-text">一带一路</div>
-                </div>
-              </div>
-              <div class="content-text-bottom text-justify">
-                汽车电子标识（简称ERI）是由国家公安部制定并予以推广，用于全国车辆真实身份识别的一套高科技系统的统称。是由公安部交通管理局统一标准，统一推行，统一管理，与汽车车辆号牌并存，并且法律效力等同于车辆号牌。
+                <img src="../assets/images/five_screen/homepage-caricon2.png" alt="">
               </div>
             </div>
             <div class="content-img">
-              <img src="../assets/images/five_screen/eg.png" alt="">
+              <img src="../assets/images/five_screen/homepage-car2.png" alt="">
             </div>
           </div>
           <div class="bottom">
             <div class="know-more-btn">
-              <a href="./bus_vehicel.html#top">了解更多</a>
+              <a href="./business.html#ways_stop">了解更多</a>
             </div>
           </div>
         </div>
