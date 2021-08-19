@@ -36,16 +36,17 @@
   box-shadow: 0 0 10px 2px #ccc;
 }
 .know-more-btn {
-  height: 40px;
-  line-height: 40px;
+  height: 36px;
+  line-height: 36px;
   box-sizing: border-box;
-  padding: 0 30px;
+  padding: 0 20px;
   // line-height: .4rem;
   display: inline-block;
   color: #163B75;
   background-color: #fff;
   font-weight: bold;
-  border-radius: 25px;
+  font-size: 12px;
+  border-radius: 18px;
   /* border: 1px solid #fff; */
   cursor: pointer;
   // font-size: .12rem;
@@ -186,10 +187,9 @@
   width: 5.22rem;
 }
 .three .bg {
-  flex: 5;
-  background:url("../../assets/images/third_screen/tral.jpg") center no-repeat;
+  flex: 1;
+  background:url("../../assets/images/third_screen/homepage-earth.png") center no-repeat;
   background-size: cover;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -199,39 +199,25 @@
   transform: translateY(-2rem) scale(.2);
 }
 .three .foot {
-  flex: 3;
+  height: 200px;
   /* display: flex; */
 }
 .three .foot .item {
   float: left;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  width: 50%;
-  padding: .4rem 0;
-  background-color: red;
+  width: 33.3%;
+  height: 90%;
 }
 .three .foot .item .icon {
-  width: .64rem;
+  width: 40px;
 }
 .three .foot .item .item-text {
-  padding: .3rem;
+  padding: 20px;
 }
-.three .foot .item-btn {
-  height: .4rem;
-  text-align: center;
-  box-sizing: border-box;
-  padding: .0rem .2rem;
-  // line-height: .4rem;
-  border-radius: .25rem;
-  border: 1px solid #fff;
-  cursor: pointer;
-}
-.three .foot .item-btn:hover {
-  background-color: #fff;
-  color: #103674;
-}
+
 .three .foot .item:nth-child(1) {
   background-color: #2EA5DF;
   transform: translateX(-4rem);
@@ -239,6 +225,11 @@
 }
 .three .foot .item:nth-child(2) {
   background-color: #036EB6;
+  transform: translateY(4rem);
+  opacity: .2;
+}
+.three .foot .item:nth-child(3) {
+  background-color: #172a86;
   transform: translateX(4rem);
   opacity: .2;
 }

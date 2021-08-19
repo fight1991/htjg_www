@@ -31,28 +31,19 @@
           </div>
         </div>
         <div class="section three">
-          <div class="bg">
+          <div class="bg banxin">
             <div class="title f30"><img src="../assets/images/third_screen/title.png" alt=""></div>
           </div>
           <div class="foot banxin">
-            <div class="item">
-              <div class="icon"><img src="../assets/images/third_screen/icon1.png" alt=""></div>
-              <span class="item-text f20 fw">
-                城市级交通管理平台
+            <div class="item" v-for="(item, index) in threeScreenData" :key="index">
+              <div class="icon"><img :src="item.icon" alt=""></div>
+              <span class="item-text fw">
+                {{item.title}}
               </span>
               <span class="know-more-btn">
-                <a class="a-label" href="./layout.html#manage">了解更多</a>
+                <a class="a-label" :href="item.href">了解更多</a>
               </span>
             </div>
-            <div class="item">
-              <div class="icon"><img src="../assets/images/third_screen/icon2.png" alt=""></div>
-              <span class="item-text f20 fw">
-                人车生活开放服务平台
-              </span>
-              <span class="know-more-btn">
-                <a href="./layout.html#server">了解更多</a>
-              </span>
-            </div> 
           </div>
         </div>
         <div class="section four four-five jc-center">
@@ -254,6 +245,21 @@ export default {
           title: '“十四五”开局之年，航天吉光乘风而生，破浪前行',
           href: './news.html#news05',
           img: require('@/assets/images/news/news05.png')
+        }
+      ],
+      threeScreenData: [
+        {
+          title: '一体:智慧交通新生态',
+          icon: require('../assets/images/third_screen/homepage-earthicon1.png'),
+          href: ''
+        }, {
+          title: '两翼:城市级交通管理平台',
+          icon: require('../assets/images/third_screen/homepage-earthicon2.png'),
+          href: './layout.html#manage'
+        }, {
+          title: '两翼:人车生活开放服务平台',
+          icon: require('../assets/images/third_screen/homepage-earthicon3.png'),
+          href: './layout.html#server'
         }
       ]
     }
