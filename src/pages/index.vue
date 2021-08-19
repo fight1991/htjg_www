@@ -1,6 +1,6 @@
 <template>
 <!--  :style="'height:' + boxHeight + 'px;'" -->
-  <div class="outer">
+  <div class="outer" id="index-outer">
     <!-- 头部导航区域 -->
     <div class="header-navigator">
       <navigator></navigator>
@@ -16,13 +16,16 @@
           <div class="content banxin">
             <div class="left-text">
               <div class="main-title">
-                <p class="main-title-1">航天科技集团军民融合战略</p>
-                <p class="main-title-2">在智慧交通领域的示范性落地与标杆性探索</p>
+                <div class="main-title-1">航天科技集团军民融合战略</div>
+                <div class="main-title-2">在智慧交通领域的示范性落地与标杆性探索</div>
               </div>
               <div class="sub-title f12 text-justify">航天吉光科技有限公司隶属于中国航天科技集团, 由深圳航天科技创新研究院控股成立, 是践行国家央地合作、军民融合战略的典范企业。航天吉光科技聚焦智慧交通领域, 充分发挥集团优势、资本优势、创新优势、数据优势, 依靠自身大数据、人工智能、云边融合等硬实力, 为客户提供"科技+产业+生态"的全方位智慧交通服务。航天吉光致力于成为智慧交通新生态的引领者,打造具备"亿车互联"数据集成、分析与应用能力的独角兽平台, 开拓出行新未来。</div>
-              <div class="know-more-btn">
+            <div class="know-box">
+              <!-- 了解更多 -->
+               <div class="know-more-btn">
                 <a href="./aboutUs.html#top">了解更多</a>
               </div>
+            </div>
             </div>
             <div class="map-img"></div>
           </div>
@@ -197,7 +200,7 @@
 </template>
 
 <script>
-
+/*eslint-disable */
 import $ from 'jquery'
 import navigator from '../components/navigator'
 
@@ -257,6 +260,9 @@ export default {
   },
   mounted () {
     this.initFullpage()
+  },
+  beforeDestroy () {
+    window.onresize = null
   },
   methods: {
     afterLoad () {},
