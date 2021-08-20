@@ -4,6 +4,11 @@
 }
 .banner {
   position: relative;
+  .banner-box {
+    img {
+      display: block;
+    }
+  }
   .content {
     position: absolute;
     height: 100%;
@@ -17,6 +22,47 @@
     .content-title {
       width: 60%;
     }
+  }
+}
+.plant-content {
+  background-color: #014da1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 4;
+  padding: 0 10px;
+  .content-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    p {
+      padding-bottom: 20px;
+
+    }
+  }
+  .pos-text-sub {
+    flex-wrap: wrap;
+  }
+  .text-main {
+    font-size: 20px;
+    font-weight: bold;
+    align-self: flex-start;
+    flex-wrap: nowrap;
+    min-width: 120px;
+    padding-right: 20px;
+  }
+}
+.eg {
+  background-color: #014da1;
+  padding-bottom: 80px;
+  .eg-title,.content {
+    padding: 60px 0;
+  }
+}
+.eg2 {
+  .case-4 {
+    transform: translateY(-80px);
   }
 }
 .title {
