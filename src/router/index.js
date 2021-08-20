@@ -41,6 +41,10 @@ const router =  new vueRouter({
           path: '/bus_vehicel',
           name: 'bus_vehicel',
           component: () => import( /* webpackChunkName: "bus_vehicel" */ '../components/bus_vehicel')
+        }, { // 电子标识
+          path: '/elec',
+          name: 'elec',
+          component: () => import( /* webpackChunkName: "elec" */ '../components/elec')
         }
       ]
     }

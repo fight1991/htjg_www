@@ -51,14 +51,17 @@ export default {
           path: '/business',
           children: [
             {
-              label: '人车生活服务平台解决方案',
-              path: '/bus_live'
+              label: '机动车电子标识',
+              path: '/elec'
             }, {
-              label: '城市级智慧停车解决方案',
+              label: '城市级机动车管理解决方案',
               path: '/business'
             }, {
               label: '城市级电动自行车管理解决方案',
               path: '/bus_vehicel'
+            }, {
+              label: '人车生活服务平台解决方案',
+              path: '/bus_live'
             }
           ]
         }, {

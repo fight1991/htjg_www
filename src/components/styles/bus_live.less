@@ -3,8 +3,21 @@
   // line-height: .3rem;
 }
 .banner {
-  background-color: #014EA0;
-  padding: 1.1rem 0 .2rem;
+  position: relative;
+  .content {
+    position: absolute;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(-50%);
+    .content-title {
+      width: 60%;
+    }
+  }
 }
 .title {
   margin: 0 auto;
