@@ -3,25 +3,33 @@
     <!-- banner区域 -->
     <div class="banner">
       <div class="banner-main">
-        <div class="banner-title aniview" data-av-animation="slideInLeft">
-          <img src="../assets/images/layout/banner-title.png" alt="">
-          <div class="banner-text text-justify">
-            航天吉光以北斗卫星、5G、大数据、物联网、云计算、AI、移动互联网等新一代多维信息技术为基础，以综合解决方案（服务平台+核心产品）为抓手，以“信息化系统管理、智能交通管理、智慧停车管理、星地一体化管理”等核心技术赋能传统动静态交通产业。提升城市交通治理水平，打造星地一体高精度时空服务，构建全新的智能交通生态。
+        <div class="banxin">
+          <div class="banner-title aniview" data-av-animation="slideInLeft">
+            <img src="../assets/images/layout/banner-title.png" alt="">
+            <div class="banner-text text-justify">
+              中共中央、国务院印发的《交通强国建设纲要》指出要推动数据资源赋能交通发展, 将我国建设为新时代的交通强国。航天吉光实施的"一体两翼"战略布局, 将助推我国智慧交通蓬勃发展。
+            </div>
           </div>
         </div>
-        <div class="ball">
-          <img class="aniview" data-av-animation="zoomInDown" src="../assets/images/layout/banner-1.png" alt="">
+      </div>
+    </div>
+    <!-- 一体区域 -->
+    <div class="one-body banxin">
+      <div class="one-title">ONE</div>
+      <div class="one-subTitle">一体</div>
+      <div class="one-text">
+        <div class="one-text-title">
+          打造基于机动车电子标识的智慧交通新生态
         </div>
-        <img src="../assets/images/layout/banner.png" alt="">
+        <div class="one-text-describe">
+          航天吉光以机动车电子标识为核心，依托北斗卫星、5G、大数据、物联网、云计算、AI、移动互联网等新一代多维信息技术，以综合解决方案为抓手，以“信息化系统管理、智能交通管理、星地一体化管理”等核心技术赋能传统动静态交通产业，构建城市交通大脑，提升城市交通治理水平，打造星地一体高精度时空服务，构建全新的智慧交通生态。
+        </div>
       </div>
     </div>
     <!-- 生态特点区域 -->
     <div class="ecol-area">
       <div class="title aniview" data-av-animation="flipInX">
         <img src="../assets/images/layout/title2.png" alt="">
-        <!-- <div class="main-title">
-        </div>
-        <div class="sub-title">生态特点</div> -->
       </div>
       <div class="pro-box flex-row banxin">
         <div class="pro-item flex-column align-center">
@@ -58,7 +66,7 @@
 
       </div>
     </div>
-    <!-- 突出特色区域 -->
+    <!-- 生态图谱区域 -->
     <div class="features-area">
       <div class="title aniview" data-av-animation="flipInX">
         <img src="../assets/images/layout/title3.png" alt="">
@@ -66,153 +74,18 @@
         </div>
         <div class="sub-title">突出特色</div> -->
       </div>
-      <div class="features-box banxin text-img-box flex-row">
-        <div class="features-tab flex-row align-center">
-          <ul class="features-tab-left">
-            <li @mouseover="tabOver(0)" class="current-show">
-              城市智慧停车
-            </li>
-            <li @mouseover="tabOver(1)">
-              电子车牌应用
-            </li>
-            <li @mouseover="tabOver(2)">
-              北斗卫星物联网应用
-            </li>
-            <li @mouseover="tabOver(3)">
-              区域信控优化
-            </li>
-            <li @mouseover="tabOver(4)">
-              交通事件检测
-            </li>
-            <li @mouseover="tabOver(5)">
-              交通态势研判
-            </li>
-          </ul>
-          <div class="features-tab-right">
-            <div v-show="currentIndex==0" class="features-tab-right-item flex-column jc-between">
-              <div class="tab-title">依托云计算、物联网、大数据、人工智能等技术，提供智慧停车整体解决方案，具备车位实时数据采集、状态监控、车位查找、停车绑定、在线支付及执法监管等强大功能，解决城市的停车难、停车贵、停车乱等难题，大幅提高停车资源利用率。</div>
-              <div class="tab-img">
-                <div class="tab-img-item">
-                  <img src="../assets/images/layout/tab1_icon1.png" alt="">
-                  <div class="text">车位查找智能化</div>
-                </div>
-                <div class="tab-img-item">
-                  <img src="../assets/images/layout/tab1_icon2.png" alt="">
-                  <div class="text">泊位管理可视化</div>
-                </div>
-                <div class="tab-img-item">
-                  <img src="../assets/images/layout/tab1_icon3.png" alt="">
-                  <div class="text">收费方式无人化</div>
-                </div>
-                <div class="tab-img-item">
-                  <img src="../assets/images/layout/tab1_icon4.png" alt="">
-                  <div class="text">欠费追缴法制化</div>
-                </div>
-              </div>
-            </div>
-            <div v-show="currentIndex==1" class="features-tab-right-item flex-column jc-between">
-              <div class="tab-title">采用射频识别技术和公安部制定推广的智能汽车电子标识，实现自动、非接触、不停车地对车辆进行识别和管理，让车主通过移动端App即可享受到高品质的人车生活服务，实现政府涉车管理及车金融等相关应用，让车与车、车与商户、车与人之间的关系变得更加紧密。</div>
-              <div class="tab-img">
-                <div class="tab-img-item">
-                  <img src="../assets/images/layout/tab2_icon1.png" alt="">
-                  <div class="text">免征信</div>
-                </div>
-                <div class="tab-img-item">
-                  <img src="../assets/images/layout/tab2_icon2.png" alt="">
-                  <div class="text">免刷卡</div>
-                </div>
-                <div class="tab-img-item">
-                  <img src="../assets/images/layout/tab2_icon3.png" alt="">
-                  <div class="text">免现金</div>
-                </div>
-                <div class="tab-img-item">
-                  <img src="../assets/images/layout/tab2_icon4.png" alt="">
-                  <div class="text">免下车</div>
-                </div>
-              </div>
-            </div>
-            <div v-show="currentIndex==2" class="features-tab-right-item flex-column jc-between">
-              <div class="tab-title">依托国家PNT体系建设战略方向，以北斗系统为核心基础，采用星、地融合方式对北斗导航定位信号进行增强，对北斗的短报文服务能力进行增强，构建天地一体、覆盖无缝、安全可信、高效便捷的国家综合PNT（定位、导航和授时）体系，为物联网应用提供广覆盖、大容量、高精度、低成本、低功耗的位置、时间和通讯（PNTC）服务。</div>
-              <div class="tab-img">
-                <div class="tab-img-item">
-                  <img src="../assets/images/layout/tab3_icon1.png" alt="">
-                  <div class="text">多维度感知</div>
-                </div>
-                <div class="tab-img-item">
-                  <img src="../assets/images/layout/tab3_icon2.png" alt="">
-                  <div class="text">多空间覆盖</div>
-                </div>
-                <div class="tab-img-item">
-                  <img src="../assets/images/layout/tab3_icon3.png" alt="">
-                  <div class="text">通导一体</div>
-                </div>
-                <div class="tab-img-item">
-                  <img src="../assets/images/layout/tab3_icon4.png" alt="">
-                  <div class="text">天地一体</div>
-                </div>
-              </div>
-            </div>
-            <div v-show="currentIndex==3" class="features-tab-right-item flex-column jc-between">
-              <div class="tab-title">航天吉光采用AI图引擎技术、路口自适应训练算法、干线协调算法等，结合城市交通历史通行规律，实时感知机动车、非机动车、行人的交通情况，实现点-线-面信号配时优化，提升交通效率，保障通行。</div>
-              <div class="tab-img">
-                <div class="tab-img-item">
-                  <img src="../assets/images/layout/tab4_icon1.png" alt="">
-                  <div class="text">区域联动优化</div>
-                </div>
-                <div class="tab-img-item">
-                  <img src="../assets/images/layout/tab4_icon2.png" alt="">
-                  <div class="text">精细化时段划分</div>
-                </div>
-                <div class="tab-img-item">
-                  <img src="../assets/images/layout/tab4_icon3.png" alt="">
-                  <div class="text">智能实时信控</div>
-                </div>
-                <div class="tab-img-item">
-                  <img src="../assets/images/layout/tab4_icon4.png" alt="">
-                  <div class="text">配时持续优化</div>
-                </div>
-              </div>
-            </div>
-            <div v-show="currentIndex==4" class="features-tab-right-item flex-column jc-between">
-              <div class="tab-title">基于人工智能的交通事件检测，可对诊断出的交通异常事件，触发信号灯AI自动优化以疏导交通，并实时告警，此外，基于视频实时检测交通异常事件，秒级上报告警，更快解决突发拥堵。</div>
-              <div class="tab-img">
-                <div class="tab-img-item">
-                  <img src="../assets/images/layout/tab5_icon1.png" alt="">
-                  <div class="text">信控联动快速闭环</div>
-                </div>
-                <div class="tab-img-item">
-                  <img src="../assets/images/layout/tab5_icon2.png" alt="">
-                  <div class="text">实时检测秒级上报</div>
-                </div>
-              </div>
-            </div>
-            <div v-show="currentIndex==5" class="features-tab-right-item flex-column jc-between">
-              <div class="tab-title">基于深度学习与反馈的迭代更新，对交通网络进行实时智能化运算与模拟，识别常发拥堵路口、路段和干线，并基于历史交通规律，结合天气情况、假日情况等对未来交通态势进行精确预判，支撑出行信息诱导发布。</div>
-              <div class="tab-img">
-                <div class="tab-img-item">
-                  <img src="../assets/images/layout/tab6_icon1.png" alt="">
-                  <div class="text">路况实时查看</div>
-                </div>
-                <div class="tab-img-item">
-                  <img src="../assets/images/layout/tab6_icon2.png" alt="">
-                  <div class="text">拥堵路口排名</div>
-                </div>
-                <div class="tab-img-item">
-                  <img src="../assets/images/layout/tab6_icon3.png" alt="">
-                  <div class="text">交通流量预测</div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="features-box banxin">
+        <img src="../assets/images/layout/strategy-atlas.png" alt="">
+      </div>
+    </div>
+    <!-- 两翼区域 -->
+    <div class="both-wings">
+      <div class="title banxin">
+        <div class="img-box banxin">
+          <img src="../assets/images/layout/strategy-aircraft.png" alt="">
         </div>
-        <div class="features-img">
-          <img v-show="currentIndex==0" src="../assets/images/layout/bg3_1.png" class="features-img-item" alt="">
-          <img v-show="currentIndex==1" src="../assets/images/layout/bg3_2.jpg" class="features-img-item" alt="">
-          <img v-show="currentIndex==2" src="../assets/images/layout/bg3_3.jpg" class="features-img-item" alt="">
-          <img v-show="currentIndex==3" src="../assets/images/layout/bg3_4.jpg" class="features-img-item" alt="">
-          <img v-show="currentIndex==4" src="../assets/images/layout/bg3_5.jpg" class="features-img-item" alt="">
-          <img v-show="currentIndex==5" src="../assets/images/layout/bg3_6.jpg" class="features-img-item" alt="">
-        </div>
+        <div class="one-title">BOTH WINGS</div>
+        <div class="one-subTitle">两翼</div>
       </div>
     </div>
     <!-- 管理平台区域 -->

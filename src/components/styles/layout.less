@@ -11,38 +11,73 @@ img {
   background-color: #141937;
 }
 .banner-main {
-  margin: 0 auto;
-  width: 16.97rem;
   height: 7.72rem;
-  position: relative;
+  background:url("../../assets/images/layout/strategy-banner.png") center no-repeat;
+  background-size: cover;
+  .banxin {
+    position: relative;
+  }
+  .banner-text{
+    margin-top: 70px;
+  }
+  .banner-title {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 405px;
+    img {
+      width: 4.05rem;
+    }
+  }
 }
-.banner-main .banner-title {
-  position: absolute;
-  left: .8rem;
-  top: 1.32rem;
-  width: 4.05rem;
+
+.one-body {
+  background-color: #004CA0;
+  padding: 60px;
+  .one-title {
+    font-size: 20px;
+  }
+  .one-subTitle {
+    font-size: 38px;
+    font-weight: bold;
+  }
+  .one-title, .one-subTitle {
+    text-align: center;
+  }
+  .one-text {
+    padding: 50px 0;
+    .one-text-title {
+      font-size: 18px;
+      font-weight: bold;
+      padding: 20px 0;
+    }
+  }
 }
-.banner-main .banner-text{
-  margin-top: .7rem;
-  // line-height: .24rem;
-  // font-size: .12rem;
+.both-wings {
+  background-color: #141937;
+  margin-top: 400px;
+  .title {
+    position: relative;
+    padding: 60px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+  }
+  .img-box {
+    left: 0;
+    position: absolute;
+    top: -40%;
+  }
+  .one-title {
+    font-size: 20px;
+  }
+  .one-subTitle {
+    font-size: 38px;
+    font-weight: bold;
+  }
 }
-.banner-main .ball {
-  width: 5.64rem;
-  height: 5.65rem;
-  position: absolute;
-  top: 50%;
-  left: 55%;
-  transform:translate(-50%, -50%);
-}
-/* 公共样式 */
-/* .title {
-  padding: .6rem 0;
-  font-size: .48rem;
-  font-weight: bold;
-  color: #004CA0;
-  text-align: center;
-} */
 .title {
   margin: 0 auto;
   padding: 1.5rem 0 1.1rem;
