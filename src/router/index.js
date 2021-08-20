@@ -17,7 +17,7 @@ const router =  new vueRouter({
       name: 'main',
       component: () => import( /* webpackChunkName: "main" */ '../pages/main'),
       children: [
-        { // 生态布局
+        { // 战略布局
           path: '/layout',
           name: 'layout',
           component: () => import( /* webpackChunkName: "layout" */ '../components/layout')

@@ -44,7 +44,7 @@ export default {
           label: '首页',
           path: '/index'
         }, {
-          label: '生态布局',
+          label: '战略布局',
           path: '/layout'
         }, {
           label: '业务方案',

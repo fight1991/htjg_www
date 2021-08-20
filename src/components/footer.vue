@@ -4,7 +4,7 @@
       <div class="left flex-column jc-between">
         <div class="top flex-row jc-around">
           <ul>
-            <li class="title">生态布局</li>
+            <li class="title">战略布局</li>
             <li><a href="./layout#manage">城市级交通管理平台</a></li>
             <li><a href="./layout#server">人车生活开放服务平台</a></li>
           </ul>
