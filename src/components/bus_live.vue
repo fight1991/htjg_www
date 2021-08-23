@@ -76,6 +76,60 @@
         <img src="../assets/images/business/life-picture4.png" alt="">
       </div>
     </div>
+    <div class="banxin">
+      <div class="flow-step">
+        <div class="left">
+          <div class="item">开通信用支付功能</div>
+          <div class="plus">+</div>
+          <div class="item">开通信用支付功能</div>
+          <div class="plus">+</div>
+          <div class="item">刷车支付</div>
+        </div>
+        <div class="center">=</div>
+        <div class="right">
+          <div class="item">车主感知优</div>
+          <div class="plus">+</div>
+          <div class="item">加油效率高</div>
+        </div>
+      </div>
+    </div>
+    <div class="eg3">
+      <div class="eg-title banxin">
+        <img src="../assets/images/business/eg-title2.png" alt="">
+      </div>
+    </div>
+    <div class="banxin flex-row parking-nopay">
+      <div class="plant-box">
+        <div class="box-title">停车场</div>
+        <div class="box-dot"></div>
+        <div class="box-item">刷车进出，真正无感</div>
+        <div class="box-item">体验尊贵，出行通畅</div>
+        <div class="box-dot"></div>
+        <div class="box-item">现有停车道闸不变</div>
+        <div class="box-item">固定位电子车牌读卡器</div>
+        <div class="box-item">兼容视频扫光学车牌</div>
+      </div>
+      <div class="plant-img pos-img">
+        <img src="../assets/images/business/life-case1.png" alt="">
+      </div>
+    </div>
+    <div class="banxin flex-row parking-nopay">
+      <div class="plant-box">
+        <div class="box-title">路边/路侧停车</div>
+        <div class="box-dot"></div>
+        <div class="box-item">刷车支付</div>
+        <div class="box-item">停走随意</div>
+        <div class="box-item">体验舒适</div>
+        <div class="box-dot"></div>
+        <div class="box-item">支付手机APP/车大屏/刷车支付</div>
+        <div class="box-item">固定读卡器等多种支付方式</div>
+        <div class="box-item">与车辆检测器深度融合</div>
+        <div class="box-item">支持部分停车位充电功能</div>
+      </div>
+      <div class="plant-img pos-img">
+        <img src="../assets/images/business/life-case2.png" alt="">
+      </div>
+    </div>
   </div>
 </template>
 
