@@ -1,89 +1,75 @@
 <template>
-<div class="outer">
+  <div class="outer">
+    <!-- banner区域 -->
     <div class="banner" id="top">
-      <div class="banner-box banxin clearfix">
-        <div class="banner-title fl">
-          <img src="../assets/images/bus_vehicel/banner-title.png" alt="">
-          <div class="banner-title-txt f16 text-justify">城市电动自行车历来管理难、事故高发、因患严重, 由此国家三部委联合颁布《关于加强电动自行车国家标准实施监督的意见》。航天吉光精心打造推出新一代电动自行车管理平台, 提高备案效率、提升盗窃案侦破率、减少违停乱停现象、降低火灾事故率, 促进城市电动车自行车管控智慧化, 打造城市规范安全的绿色出行环境。</div>
-          <div class="banner-icon-list">
-            <img src="../assets/images/bus_vehicel/banner-icon.png" alt="">
-          </div>
-        </div>
-        <div class="banner-img-box fr">
-          <img src="../assets/images/bus_vehicel/banner-bg1.png" alt="">
-        </div>
-      </div>
-    </div>
-    <!-- 电动自行车管控系统业务 -->
-    <div class="control-area common-area">
-      <div class="title aniview" data-av-animation="flipInX">
-        <img src="../assets/images/bus_vehicel/title1.png" alt="">
-      </div>
-      <div class="banxin grid-icon-box">
-        <div class="grid-item">
-          <img src="../assets/images/bus_vehicel/grid1.png" alt="">
-        </div>
-        <div class="grid-item">
-          <img src="../assets/images/bus_vehicel/grid2.png" alt="">
-        </div>
-        <div class="grid-item">
-          <img src="../assets/images/bus_vehicel/grid3.png" alt="">
-        </div>
-        <div class="grid-item">
-          <img src="../assets/images/bus_vehicel/grid4.png" alt="">
-        </div>
-        <div class="grid-item">
-          <img src="../assets/images/bus_vehicel/grid5.png" alt="">
-        </div>
-        <div class="grid-item">
-          <img src="../assets/images/bus_vehicel/grid6.png" alt="">
-        </div>
-        <div class="grid-item">
-          <img src="../assets/images/bus_vehicel/grid7.png" alt="">
-        </div>
-        <div class="grid-item">
-          <img src="../assets/images/bus_vehicel/grid8.png" alt="">
-        </div>
-      </div>
-    </div>
-    <!-- 车辆登记备案系统 -->
-    <div class="record-area common-area">
-      <div class="title aniview" data-av-animation="flipInX">
-        <img src="../assets/images/bus_vehicel/title2.png" alt="">
-      </div>
-      <div class="banxin text-img-box flex-row">
-        <div class="pos-img">
-          <img src="../assets/images/bus_vehicel/bg2.png" alt="">
-        </div>
-        <div class="pos-text">
-          <div class="pos-text-main f24">车辆登记备案系统</div>
-          <div class="pos-text-sub">
-            要对电动自行车实行有效管理的关键在于对电动自行车进行注册登记上牌。航天吉光车辆登记备案系统针对个人、民生行业及企事业单位分别提供数字化、信息化、智能化的信息备案服务，将人脸识别信息、个人信息（身份证）、电动自行车信息（车辆合格证、发票、车辆编码）通过线上平台或手机端程序采集上传，打造出一套“让人民少跑路，让数据多跑路”的快速备案流程
-          </div>
-          <div class="pos-text-img">
-            <img src="../assets/images/bus_vehicel/iconList1.png" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- 系统组成区域介绍 -->
-    <div class="introduce-area common-area">
-      <div class="title aniview" data-av-animation="flipInX">
-        <img src="../assets/images/bus_vehicel/title3.png" alt="">
-      </div>
-      <div class="banxin text-img-box flex-row">
-        <div class="pos-text">
-          <div class="pos-text-main f24">电动自行车管控系统介绍</div>
-          <div class="pos-text-sub">
-            电动自行车管控系统是根据电动自行车行驶特色场景，通过物联网手段实现电动自行车闯红灯、逆向行驶、占用机动车道行驶等重点违章行为进行检测为主要目的的系统平台。通过RFID人车关联以及人脸识别技术，交警可利用视频、电警等设备进行电动自行车交通违法执法，并且在事故后较为快速的联系上交通违法人，实现有效的非现场执法，完美解决车辆身份认定和违法行为识别精准性难题。消防、治安、街道社区可以利用视频+RFID门禁设备，实施有效监测，降低电动自行车偷盗发生率，禁止电动自行车楼道乱停、房内充电，从而降低消防隐患。公安部门也可以通过溯源查找与电动自行车相关的治安、刑事案件线索。
+      <div class="banner-box banxin">
+        <div class="banner-title">
+          <img src="../assets/images/business/elec-title.png" alt="">
+          <div class="pragrap main-title text-justify">车联网应用的信任根，无感刷车支付的安全保障</div>
+          <div class="pragrap text-justify">机动车电子标识（电子车牌）是由国家公安部制定并予以推广，基于物联网技术的车辆真实身份管理系统。电子车牌由公安部交通管理局统一标准，统一推行，统一管理，与汽车车辆号牌并存，并且法律效力等同于车辆号牌。</div>
+          <div class="pragrap text-justify">机动车电子标识技术能够自动、非接触、不停车地完成车辆的识别和监控，突破了原有交通信息采集技术的瓶颈；实现车辆交通信息的分类采集、精确化采集、海量采集，动态采集，抓住了智能交通应用系统采集源头的关键问题，是构建智慧交通应用系统的基础。</div>
 
-          </div>
-          <div class="pos-text-img">
-            <img src="../assets/images/bus_vehicel/iconList2.png" alt="">
+        </div>
+        <div class="empty"></div>
+        <div class="banner-img-box">
+          <img src="../assets/images/business/vehicle-banner.png" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- 工作原理区域 -->
+    <div class="work-area">
+      <div class="bg-box">
+        <img src="../assets/images/business/vehicle-principle.png" alt="">
+      </div>
+      <div class="show-text banxin">
+        <div class="title">
+          <img src="../assets/images/business/work-source.png" alt="">
+        </div>
+        <div class="text-descrip">
+          <p>车辆驶入机动车电子标识采集点</p>
+          <p>读写器设备通过天线发射超高频电磁波</p>
+          <p>机动车电子标识转换超高频电磁波为电能，启动芯片工作</p>
+          <p>机动车电子标识将芯片存储的信息发回读写设备</p>
+          <p>读写设备读取信息并解码后传输到后台系统</p>
+          <p>完成与车辆相关信息的鉴别、查询、调度、统计等管理应用</p>
+        </div>
+      </div>
+    </div>
+    <!-- 政策支持区域 -->
+    <div class="plockcy">
+      <div class="title">
+        <img src="../assets/images/business/plic-support.png" alt="">
+      </div>
+      <div class="plic-content banxin">
+        <div class="time-line">
+          <div class="time-title dot">2021</div>
+          <div class="time-content">
+            3月：公安部发布《道路交通安全法（修订建议稿）》，准予登记的机动车应当符合机动车国家安全技术标准，并按规定安装电子标识。安装符合国家标准的电子标识或者已申领相应电子证明、凭证的，可以不放置审验合格标志、保险标志。
           </div>
         </div>
-        <div class="pos-img">
-          <img src="../assets/images/bus_vehicel/bg3.png" alt="">
+        <div class="time-line">
+          <div class="time-title dot">2020</div>
+          <div class="time-content">
+            12月：公安部交管局《公安交通管理科技发展规划（2021-2023年）》，要求应用机动车电子标识技术，构建车辆数字身份注册认证体系，为车联网、自动驾驶等应用提供可信数字身份。6月：公安部交管局发布：自6月20日起，河北、山西、内蒙古、辽宁、吉林、安徽、福建、江西、河南、广西、西藏、陕西、甘肃、青海、宁夏15个省(区)推行检验标志电子化，实现全国全面推广应用。
+          </div>
+        </div>
+        <div class="time-line">
+          <div class="time-title dot">2019</div>
+          <div class="time-content">
+            8月：公安部交通管理科学研究所发布《机动车电子标识密钥管理系统技术要求》，规定了机动车电子标识密钥管理系统的一般要求、密钥管理和基本功能;《机动车电子标识读写设备应用接口规范》，规定了机动车电子标识读写设备与其他设备或系统交互通信的一般规定，消息、参数和标识符，通信链路监测，读写设备操作规则管理，读写设备管理和数据上报。
+          </div>
+        </div>
+        <div class="time-line">
+          <div class="time-title dot">2018</div>
+          <div class="time-content">
+            7月：正式开始实施由国家质量监督检验检疫总局、国家标准化管理委员会批准发布的机动车电子标识六项国家标准。
+          </div>
+        </div>
+        <div class="time-line">
+          <div class="time-title dot">2017</div>
+          <div class="time-content">
+            12月：国家质量监督检验检疫总局、国家标准化管理委员会批准发布了机动车电子标识六项国家标准，于2018年7月1日正式实施。8月：国务院发布《道路交通安全“十三五”规划》,2月：国务院《“十三五”现代综合交通运输体系发展规划》，明确指出“研究使用机动车电子标识”。
+          </div>
         </div>
       </div>
     </div>

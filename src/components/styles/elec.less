@@ -1,62 +1,78 @@
 .outer {
   color: #fff;
-  // line-height: .3rem;
-}
-.banner {
-  background-color: #014EA0;
-  padding: 1.1rem 0 .2rem;
 }
 .title {
-  margin: 0 auto;
-  padding: 1.5rem 0 1.1rem;
+  width: 200px;
+  margin: 70px auto;
 }
-.banner-img-box {
-  width: 6.91rem;
-  /* height: 7.65rem; */
-}
-.banner-title {
-  width: 4.62rem;
-  height: 2.04rem;
-}
-.banner-title-txt {
-  margin: .4rem 0;
-}
-.banner-icon-list {
-  width: 2.8rem;
-}
-.control-area .title {
-  width: 6.31rem;
-}
-.record-area .title {
-  width: 4.61rem;
-}
-.introduce-area .title {
-  width: 6.31rem;
-}
-.pos-text-img {
-  margin-top: .3rem;
-}
-.record-area .pos-text-img {
-  width: 3.84rem;
-}
-.record-area .pos-img,
-.introduce-area .pos-img {
+.banner {
   background-color: #103674;
+  padding: 1.1rem 0 .2rem;
 }
-.record-area .pos-img img {
-  width: 4.95rem;
-  margin: 0 auto;
-}
-.introduce-area .pos-text-img {
-  width: 3.99rem;
-}
-.grid-icon-box {
+.banner-box {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  .empty {
+    flex: 1;
+  }
+  .banner-title {
+    flex: 5;
+    .main-title {
+      margin-top: 40px;
+    }
+  }
+  .banner-img-box {
+    flex: 7;
+  }
+  .pragrap {
+    margin-bottom: 20px;
+  }
 }
-.grid-item {
-  width: 2.85rem;
-  /* width: 3.5rem; */
-  margin-bottom: .2rem;
+.work-area {
+  position: relative;
+  .title {
+    padding: 10px 0;
+    margin-top: 60px;
+  }
+  .show-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+  }
+  .text-descrip {
+    text-align: center;
+    color: #000;
+    padding: 30px 0;
+    p {
+      padding: 10px;
+    }
+  }
+}
+.plic-content {
+  border-left: 1px solid #103674;
+  .time-line {
+    padding: 20px 0 30px 30px;
+    color: #000;
+  }
+  .time-title {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 0;
+    position: relative;
+    &.dot::after {
+      position: absolute;
+      left: -39px;
+      top: 50%;
+      content: '';
+      width: 16px;
+      height: 16px;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      // background-color: red;
+      background-image: radial-gradient(circle, #103674, #103674 50%, #00ccfd 50%, #00ccfd);
+    }
+  }
+  .time-content {
+    line-height: 24px;
+  }
 }
