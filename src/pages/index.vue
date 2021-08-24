@@ -145,9 +145,6 @@ export default {
    },
   data () {
     return {
-      homeImg: {
-        one: require('../assets/home-page1.jpg')
-      },
       swiperList: [
         {
           id: 'news01',
