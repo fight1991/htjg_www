@@ -21,7 +21,7 @@ const router =  new vueRouter({
           path: '/layout',
           name: 'layout',
           component: () => import( /* webpackChunkName: "layout" */ '../components/layout')
-        }, { // 业务方案 城市级智慧停车解决方案
+        }, { // 业务方案 城市级机动车解决方案
           path: '/business',
           name: 'business',
           component: () => import( /* webpackChunkName: "business" */ '../components/business')
@@ -45,7 +45,7 @@ const router =  new vueRouter({
           path: '/elec',
           name: 'elec',
           component: () => import( /* webpackChunkName: "elec" */ '../components/elec')
-        }, { // 电子标识
+        }, { // 产品中心
           path: '/product',
           name: 'product',
           component: () => import( /* webpackChunkName: "product" */ '../components/product')

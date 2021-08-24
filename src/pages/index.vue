@@ -99,12 +99,6 @@
         <div class="section six flex-column align-center jc-center">
           <div class="title f30"><img src="../assets/images/six_screen/title.png" alt=""></div>
           <div class="news-banner banxin">
-            <!-- <div class="slide">
-              <div class="slide-detail"></div>
-            </div>
-            <div class="slide">第三屏的第二屏</div>
-            <div class="slide">第三屏的第三屏</div>
-            <div class="slide">第三屏的第四屏</div> -->
             <div class="swiper-container">
               <div class="swiper-wrapper">
                 <div v-for="item in swiperList" :key="item.id" class="swiper-slide">
@@ -131,6 +125,9 @@
             <a href="./news">了解更多</a>
           </div>
         </div>
+        <div class="section active seven">
+          <nav-footer></nav-footer>
+        </div>
       </div>
     </div>
   </div>
@@ -140,30 +137,16 @@
 /*eslint-disable */
 import $ from 'jquery'
 import navigator from '../components/navigator'
-
+import footer from '../components/footer'
 export default {
-  components: { navigator },
+  components: { 
+    navigator,
+    navFooter: footer
+   },
   data () {
     return {
       homeImg: {
         one: require('../assets/home-page1.jpg')
-      },
-      options: {
-        licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
-        //是否显示导航，默认为false
-        navigation: true,
-        //为每个section设置背景色
-        sectionsColor: [
-          "#41b883",
-          "#ff5f45",
-          "#0798ec",
-          "#fec401",
-          "#1bcee6",
-          "#ee1a59",
-          "#2c3e4f",
-          "#ba5be9",
-          "#b4b8ab"
-        ],
       },
       swiperList: [
         {
@@ -232,8 +215,8 @@ export default {
     initFullpage () {
       $('.box').fullpage({
         // 配置每屏的颜色
-        sectionsColor: ['#004CA0', '#103674', '#004CA0', '#0F3574', '#004EA0', '#0F3574'],
-        navigationTooltips: ['智慧交通新生态的引领者', '关于我们', '智慧交通战略布局', '城市级智慧停车解决方案', '人车生活服务平台解决方案', '新闻资讯'],
+        sectionsColor: ['#004CA0', '#103674', '#004CA0', '#0F3574', '#004EA0', '#0F3574', '#151433'],
+        navigationTooltips: ['智慧交通新生态的引领者', '关于我们', '智慧交通战略布局', '业务方案介绍', '业务方案介绍', '新闻资讯', '备案信息'],
         // 配置内容不垂直居中
         verticalCentered: false,
         // 导航
