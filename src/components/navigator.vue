@@ -1,5 +1,5 @@
 <template>
-  <div class="header-box">
+  <div :class="{'header-box':true, noBg: currentRoute=='/aboutUs'}">
     <div class="left f30">
       <img src="../assets/images/logo.png" alt="">
     </div>
@@ -120,6 +120,9 @@ export default {
   align-items: center;
   z-index: 12;
   padding: 0 .6rem;
+}
+.noBg {
+  background-color: transparent;
 }
 .header-box .select-down {
   position: absolute;

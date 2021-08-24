@@ -11,12 +11,14 @@
     <!-- 底部区域 -->
     <div>
       <!-- h5有footer标签, 需要重新命名, 否则会报错 -->
-      <nav-footer></nav-footer>
+      <!-- <nav-footer></nav-footer> -->
+      <div class="empty"></div>
     </div>
   </div>
 </template>
 
 <script>
+/*eslint-disable */
 import navigator from '../components/navigator'
 import navFooter from '../components/footer'
 export default {
@@ -28,6 +30,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="less" scoped>
+  .empty {
+    height: 200px;
+  }
 </style>
