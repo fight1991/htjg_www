@@ -125,7 +125,7 @@
             <a href="./news">了解更多</a>
           </div>
         </div>
-        <div class="section active seven">
+        <div class="section seven">
           <nav-footer></nav-footer>
         </div>
       </div>

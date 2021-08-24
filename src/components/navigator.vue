@@ -9,7 +9,11 @@
           <!-- 一级菜单 -->
           <li
             v-for="item in routeList"
-            :class="{'link': true, 'active': currentRoute == item.path, 'select-items': item.children}"
+            :class="{
+              'link': true,
+              'active': (currentRoute == item.path) || (keepActive && item.path=='/elec'),
+              'select-items': item.children
+            }"
             :key="item.path">
             <a :href="item.path">
               <span>{{item.label}}</span>
@@ -89,6 +93,9 @@ export default {
   computed: {
     currentRoute () {
       return this.$route.path
+    },
+    keepActive () {
+      return ['/business', '/bus_vehicel', '/bus_live'].includes(this.$route.path)
     }
   },
   methods: {
