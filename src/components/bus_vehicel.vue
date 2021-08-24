@@ -2,15 +2,16 @@
 <div class="outer">
     <!-- banner区域 -->
     <div class="banner" id="top">
-      <div class="banner-box banxin clearfix">
-        <div class="banner-title fl">
+      <div class="banner-box banxin">
+        <div class="banner-title">
           <img src="../assets/images/bus_vehicel/banner-title.png" alt="">
           <div class="banner-title-txt text-justify">航天吉光在进行广泛调研的基础上，利用互联网、物联网、人工智能、RFID、大数据、云计算及北斗定位等先进科学技术，提出城市电动自行车管理解决方案。按照电动自动车智能信息化管理目标，规范电动自行车登记备案管理，精准采集电动自行车交通违法行为，强化社区电动自行车日常停放、充电、治安防盗及入户预警的管控，显著提升城市电动车管理的时效性、准确性和智能性，改善城市交通现状。</div>
           <div class="banner-icon-list">
             <img src="../assets/images/business/electricvehicle-icon.png" alt="">
           </div>
         </div>
-        <div class="banner-img-box fr">
+        <div class="empty"></div>
+        <div class="banner-img-box">
           <img src="../assets/images/business/electricvehicle.png" alt="">
         </div>
       </div>

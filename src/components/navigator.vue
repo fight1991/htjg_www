@@ -48,7 +48,7 @@ export default {
           path: '/layout'
         }, {
           label: '业务方案',
-          path: '/business',
+          path: '/elec',
           children: [
             {
               label: '机动车电子标识',
