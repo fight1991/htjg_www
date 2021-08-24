@@ -119,7 +119,7 @@
       </div>
     </div>
    <!-- 软件产品区域 -->
-    <div id="solf">
+    <div id="soft">
       <div class="title">
         <img src="../assets/images/product/soft-title.png" alt="">
       </div>
