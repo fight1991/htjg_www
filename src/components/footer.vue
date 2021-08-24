@@ -23,6 +23,7 @@
     </div>
     <div class="bottom-box">
         <div class="copy-right">
+          <span style="padding-right:20px">Copyright@航天吉光科技有限公司</span>
           <img class="gover" src="../assets/images/government.png"/>
           <span>苏公网安备 32021102001191号</span>
           <a class="target" target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index">
