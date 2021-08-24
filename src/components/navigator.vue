@@ -127,7 +127,7 @@ export default {
 .header-box .select-down {
   position: absolute;
   left: 0;
-  top: 1.4rem;
+  top: 1.1rem;
   width: 100%;
   z-index: 11;
   height: 0;
@@ -192,7 +192,7 @@ export default {
 }
 .header-box .link {
   width: 20%;
-  height: 1.4rem;
+  height: 1.1rem;
   display: flex;
   align-items: center;
   justify-content: center;

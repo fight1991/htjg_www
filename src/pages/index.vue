@@ -27,11 +27,15 @@
               </div>
             </div>
             </div>
-            <div class="map-img"></div>
+            <div class="gap"></div>
+            <div class="map-img">
+              <img src="../assets/images/second_sreen/map.png" alt="">
+            </div>
           </div>
         </div>
         <div class="section three">
-          <div class="bg banxin">
+          <div class="top-img banxin">
+            <img src="../assets/images/third_screen/homepage-earth.png" alt="">
             <div class="title f30"><img src="../assets/images/third_screen/title.png" alt=""></div>
           </div>
           <div class="foot banxin">
@@ -58,6 +62,7 @@
                 <img src="../assets/images/four_sreen/homepage-caricon.png" alt="">
               </div>
             </div>
+            <div class="gap"></div>
             <div class="content-img">
               <img src="../assets/images/four_sreen/homepage-car.png" alt="">
             </div>
@@ -80,6 +85,7 @@
                 <img src="../assets/images/five_screen/homepage-caricon2.png" alt="">
               </div>
             </div>
+            <div class="gap"></div>
             <div class="content-img">
               <img src="../assets/images/five_screen/homepage-car2.png" alt="">
             </div>
@@ -251,9 +257,6 @@ export default {
 
 <style scoped lang="less">
   @import './styles/index.less';
-  .main-title {
-    font-size: 18px;
-  } 
   .swiper-wrapper {
     display: flex;
     overflow: hidden;
