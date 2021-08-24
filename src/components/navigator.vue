@@ -65,7 +65,19 @@ export default {
             }
           ]
         }, {
-          label: '新闻中心',
+          label: '产品中心',
+          path: '/product',
+          children: [
+             {
+              label: '硬件设备',
+              path: '/product#hardware'
+            }, {
+              label: '软件平台',
+              path: '/product#soft'
+            },
+          ]
+        }, {
+          label: '新闻资讯',
           path: '/news'
         }, {
           label: '关于我们',
