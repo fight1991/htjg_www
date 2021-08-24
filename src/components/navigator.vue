@@ -4,7 +4,7 @@
       <img src="../assets/images/logo.png" alt="">
     </div>
     <div class="center">
-      <div class="route-list f24">
+      <div class="route-list f22">
         <ul>
           <!-- 一级菜单 -->
           <li
