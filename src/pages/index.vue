@@ -23,7 +23,7 @@
             <div class="know-box">
               <!-- 了解更多 -->
                <div class="know-more-btn">
-                <a href="./aboutUs.html#top">了解更多</a>
+                <a href="./aboutUs">了解更多</a>
               </div>
             </div>
             </div>
@@ -69,7 +69,7 @@
           </div>
           <div class="bottom">
             <div class="know-more-btn">
-              <a href="./business.html#ways_stop">了解更多</a>
+              <a href="./business">了解更多</a>
             </div>
           </div>
         </div>
@@ -92,7 +92,7 @@
           </div>
           <div class="bottom">
             <div class="know-more-btn">
-              <a href="./business.html#ways_stop">了解更多</a>
+              <a href="./business">了解更多</a>
             </div>
           </div>
         </div>
@@ -128,7 +128,7 @@
             </div>
           </div>
           <div class="know-more-btn swiper-box-btn">
-            <a href="./news.html">了解更多</a>
+            <a href="./news">了解更多</a>
           </div>
         </div>
       </div>
@@ -169,27 +169,27 @@ export default {
         {
           id: 'news01',
           title: '《道路交通安全法（修订建议稿）》公开征求意见，机动车需按规定安装电子标识',
-          href: './news.html#news01',
+          href: './news#news01',
           img: require('@/assets/images/news/news01.png')
         }, {
           id: 'news02',
           title: '航天吉光“智慧堰桥”停车一体化项目正式启动',
-          href: './news.html#news02',
+          href: './news#news02',
           img: require('@/assets/images/news/news02.png')
         }, {
           id: 'news03',
           title: '三个首创！航天吉光非机动车管控试点在江阴落地，赋能城市交通治理',
-          href: './news.html#news03',
+          href: './news#news03',
           img: require('@/assets/images/news/news03.png')
         }, {
           id: 'news04',
           title: '步步为营！智慧交通赛道上最新政策与行业动态（2月份）',
-          href: './news.html#news04',
+          href: './news#news04',
           img: require('@/assets/images/news/news04.png')
         }, {
           id: 'news05',
           title: '“十四五”开局之年，航天吉光乘风而生，破浪前行',
-          href: './news.html#news05',
+          href: './news#news05',
           img: require('@/assets/images/news/news05.png')
         }
       ],
@@ -197,15 +197,15 @@ export default {
         {
           title: '一体:智慧交通新生态',
           icon: require('../assets/images/third_screen/homepage-earthicon1.png'),
-          href: ''
+          href: '/layout#one'
         }, {
           title: '两翼:城市级交通管理平台',
           icon: require('../assets/images/third_screen/homepage-earthicon2.png'),
-          href: './layout.html#manage'
+          href: '/layout#city'
         }, {
           title: '两翼:人车生活开放服务平台',
           icon: require('../assets/images/third_screen/homepage-earthicon3.png'),
-          href: './layout.html#server'
+          href: './layout#server'
         }
       ]
     }

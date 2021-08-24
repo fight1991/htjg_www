@@ -15,7 +15,7 @@
     </div>
     <!-- 一体区域 -->
     <div class="one-body banxin">
-      <div class="one-title">ONE</div>
+      <div class="one-title" id="one">ONE</div>
       <div class="one-subTitle">一体</div>
       <div class="one-text">
         <div class="one-text-title">
@@ -84,12 +84,12 @@
         <div class="img-box banxin">
           <img src="../assets/images/layout/strategy-aircraft.png" alt="">
         </div>
-        <div class="one-title">BOTH WINGS</div>
+        <div class="one-title" id="wings">BOTH WINGS</div>
         <div class="one-subTitle">两翼</div>
       </div>
     </div>
     <!-- 管理平台区域 -->
-    <div class="plant-area" id="manage">
+    <div class="plant-area" id="city">
       <div class="title aniview" data-av-animation="flipInX">
         <img src="../assets/images/layout/title4.png" alt="">
         <!-- <div class="main-title"></div>
