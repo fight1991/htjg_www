@@ -6,7 +6,7 @@
       </div>
     </div>
     <div class="news-list">
-      <div class="news-item" id="news01">
+      <div class="news-item banxin" id="news01">
         <div class="news-left-text">
           <div class="news-time">2021年4月1日</div>
           <div class="news-title f18">《道路交通安全法（修订建议稿）》公开征求意见，机动车需按规定安装电子标识</div>
@@ -18,7 +18,7 @@
           <img src="../assets/images/news/news-item1.jpg" alt="">
         </div>
       </div>
-      <div class="news-item" id="news02">
+      <div class="news-item banxin" id="news02">
         <div class="news-left-text">
           <div class="news-time">2021年3月25日</div>
           <div class="news-title f18">航天吉光“智慧堰桥”停车一体化项目正式启动</div>
@@ -30,7 +30,7 @@
           <img src="../assets/images/news/news-item2.png" alt="">
         </div>
       </div>
-      <div class="news-item" id="news03">
+      <div class="news-item banxin" id="news03">
         <div class="news-left-text">
           <div class="news-time">2021年3月18日</div>
           <div class="news-title f18">三个首创！航天吉光非机动车管控试点在江阴落地，赋能城市交通治理</div>
@@ -42,7 +42,7 @@
           <img src="../assets/images/news/news-item3.png" alt="">
         </div>
       </div>
-      <div class="news-item" id="news04">
+      <div class="news-item banxin" id="news04">
         <div class="news-left-text">
           <div class="news-time">2021年2月26日</div>
           <div class="news-title f18">步步为营！智慧交通赛道上最新政策与行业动态（2月份）</div>
@@ -54,7 +54,7 @@
           <img src="../assets/images/news/news-item1.jpg" alt="">
         </div>
       </div>
-      <div class="news-item" id="news05">
+      <div class="news-item banxin" id="news05">
         <div class="news-left-text">
           <div class="news-time">2021年2月03日</div>
           <div class="news-title f18">“十四五”开局之年，航天吉光乘风而生，破浪前行</div>

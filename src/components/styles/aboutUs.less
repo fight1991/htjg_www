@@ -1,5 +1,5 @@
 .outer {
-  background-color: #fff;
+  color: #000;
 }
 .banner {
   position: relative;
@@ -15,15 +15,64 @@ img {
   width: 100%;
 }
 .aboutUs-area {
-  width: 8.52rem;
-  margin: 1rem auto;
+  padding: 60px 0;
+  color: #000;
+  .top-title {
+    font-size: .18rem;
+    font-weight: bold;
+  }
+  .bottom-content {
+    padding-top: 20px;
+    color: #4c4c4c;
+    display: flex;
+    line-height: .24rem;
+    .left,.right {
+      flex: 4;
+    }
+    .gap {
+      flex: 1;
+    }
+  }
 }
 .banner2 {
-  height: 9.09rem;
-  background: url("../../assets/images/aboutUs/bg2.png") center no-repeat;
-  background-size: cover;
+  position: relative;
+  .content {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: center;
+    .banner2-title {
+      width: 3rem;
+      margin: 0 auto;
+    }
+  }
+  .content-txt {
+    background-color: #fff;
+    display: flex;
+    align-items: stretch;
+    .content-item {
+      width: 20%;
+    }
+    .content-title {
+      font-size: .18rem;
+      font-weight: bolder;
+      padding-top: 30px;
+      text-align: center;
+    }
+    .content-detail {
+      padding: 20px;
+      line-height: .24rem;
+    }
+  }
+  .bg-e {
+    background-color: #ededed;
+  }
 }
-.banner2-title,
 .cooper-title {
   width: 3.38rem;
   flex: 2;
@@ -36,6 +85,12 @@ img {
   flex: 1;
   width: 18.01rem;
 }
+.culture-area,.guys-area {
+  background-color: #004ca0;
+}
+.guys-area {
+  padding-bottom: 100px;
+} 
 .culture-area .title {
   width: 3.03rem;
   margin: 0 auto;
@@ -45,6 +100,9 @@ img {
   width: auto;
   display: flex;
   justify-content: center;
+}
+.pro-item:nth-child(2n + 1) {
+  background-color: #43c0f0;
 }
 .pro-item:nth-child(2) {
   background:url("../../assets/images/aboutUs/bg3.png") center no-repeat;
